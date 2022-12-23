@@ -180,6 +180,21 @@
   left: 94%;
 }
 
+.BotCircleTransform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25em;
+  width: 20em;
+  /* border-radius: 50%; */
+  box-shadow: 0.3em 0.5em 0.5em rgba(67, 67, 67, 0.649);
+  background-color: rgb(229, 243, 255);
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 1%;
+  left: 94%;
+}
+
 @media (max-width: 1200px) and (min-width: 480px) {
   .inputFields {
     padding: 0.2em;

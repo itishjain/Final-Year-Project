@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "../components/App.css";
 import HomePageLogo from "../images/Logo.png";
 import chatLogo from "../images/chatIcon1.png";
 import chatBotLogo from "../images/chatBotImage.png";
 
 const Success = () => {
+  const [style, setStyle] = useState("BotCircle");
+
+  const shapeChange = () => {
+    setStyle("BotCircleTransform");
+  };
+
+  // const Hide=()=>{
+  //   setStyle("")
+  // }
+
   return (
     <div>
       <div className="iconHome">
@@ -24,7 +34,7 @@ const Success = () => {
           See you in next presentation.
         </div>
       </div>
-      <div className="BotCircle">
+      <div className={style} onClick={shapeChange}>
         <img src={chatBotLogo} className="botLogo" alt="Chat icon" />
       </div>
     </div>
